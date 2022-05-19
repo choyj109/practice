@@ -1,0 +1,30 @@
+body {
+  background-color: #ead1be;
+}
+.wrapper {
+  width: 60vw;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 20vw;
+  background: url(../images/main_img02.png) no-repeat top / cover;
+  position: relative;
+}
+.header h1 {
+  font-size: 2vw;
+  font-weight: bold;
+  position: absolute;
+  right: 2vw;
+  bottom: 6.5vw;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  opacity: 0.5;
+  color: #fff;
+  padding: 5px;
+}
+z .header-list li {
+}
