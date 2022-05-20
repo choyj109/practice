@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <style>
+      .tabbox {
+        width: 500px;
+        margin: 50px auto;
+      }
+      .tab-title {
+        background-color: #ff525e;
+        display: flex;
+        border-top: 1px solid #ff525e;
+        border-left: 1px solid #ff525e;
+        border-right: 1px solid #ff525e;
+      }
+      .tab-title > li {
+        width: 25%;
+      }
+      .tab-title > li > a {
+        display: block;
+        height: 45px;
+      }
+      .tab-title > li > a > span {
+        display: block;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+      }
+      .tab-title > li.active > a > span {
+        color: #ff525e;
+        background-color: #fff;
+        position: relative;
+      }
+      .tab-title > li.active > a > span::after {
+        content: "";
+        height: 3px;
+        width: 30px;
+        background-color: #ff525e;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px;
+      }
+      .tab-content {
+        position: relative;
+        box-sizing: border-box;
+        padding: 5px 20px;
+        height: 385px;
+        border: 1px solid #555454;
+        border-top-color: transparent;
+      }
+      .tab-content > ul {
+        position: absolute;
+        background-color: #fff;
+        display: none;
+        /* 컨텐츠 넘침 방지 */
+        width: calc(100% - 40px);
+      }
+      .tab-content > ul:first-child {
+        display: block;
+      }
+      .tab-content > ul > li {
+        box-sizing: border-box;
+        padding: 10px 0;
+        border-bottom: 1px solid #555454;
+        position: relative;
+      }
+      .tab-content > ul > li .title {
+        font-size: 14px;
+      }
+      .tab-content > ul > li .title a {
+        display: block;
+        margin-right: 80px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tab-content > ul > li .date {
+        color: #999;
+        font-size: 13px;
+      }
+      .tab-content > ul > li .list-icon {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        padding: 4px 6px;
+        color: #ff525e;
+        border: 1px solid #ff525e;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabbox">
+      <ul class="tab-title">
+        <li class="active">
+          <a href="#"><span>원서접수</span></a>
+        </li>
+        <li>
+          <a href="#"><span>수험표 공고</span></a>
+        </li>
+        <li>
+          <a href="#"><span>합격자 발표</span></a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <ul>
+          <li>
+            <p class="title">
+              <a href="#"
+                >2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.) 2022년 제6회
+                CAD실무능력평가 정기시험(2022.6.11.)</a
+              >
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+        </ul>
+        <!-- //ul-1 -->
+        <ul>
+          <li>
+            <p class="title">
+              <a href="#">제주여자상업고등학교 ITQ 수시시험</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제6회 CAD실무능력평가 정기시험(2022.6.11.)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+        </ul>
+        <!-- //ul-2 -->
+        <ul>
+          <li>
+            <p class="title">
+              <a href="#">2022년 제 4회 GTQ정기시험(2022.04.23)</a>
+            </p>
+            <p class="date">온라인 2022-05-24 ~ 2022-05-30</p>
+            <a href="#" class="list-icon">접수 D-6</a>
+          </li>
+        </ul>
+        <!-- //ul-3 -->
+      </div>
+    </div>
+  </body>
+</html>
