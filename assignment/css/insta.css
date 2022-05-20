@@ -1,0 +1,17 @@
+.wrap {
+  background-color: #fafafa;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+header a {
+  font-size: 18px;
+}
+.header-icon i {
+  font-size: 25px;
+}
+.circle {
+    width: 25px;
+}

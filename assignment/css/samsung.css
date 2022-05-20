@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  min-width: 1200px;
+  width: 100%;
+}
+.inner {
+  width: 1200px;
+  margin: auto;
+}
+
+/* 전체메뉴 컨트롤 */
+header {
+  padding: 40px 0;
+  background-color: #f9ff81;
+  height: 100px;
+  overflow: hidden;
+}
+header:hover {
+  height: 260px;
+  transition: height 0.35s;
+}
+header .inner {
+  display: flex;
+  padding: 0 12px;
+  justify-content: space-between;
+}
+header .logo {
+  font-size: 34px;
+  font-weight: bold;
+}
+.inner .gnb {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+}
+.gnb .depth1 {
+  width: 700px;
+}
+.gnb .depth1 > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  height: 34px;
+  line-height: 34px;
+}
+.gnb .depth1:hover > a {
+  color: crimson;
+}
+.gnb .depth2 {
+  padding-top: 50px;
+}
+.gnb .depth2 > li > a {
+  color: #666;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
