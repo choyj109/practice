@@ -1,0 +1,227 @@
+.header-inner {
+  width: 100%;
+  min-width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.header-inner h1 a {
+  display: block;
+  width: 176px;
+  height: 36px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/logo.png)
+    0 50% no-repeat;
+  font-size: 0;
+  text-indent: -9999px;
+}
+.gnb-list {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.depth1 {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  padding: 38px 0;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.depth1-list {
+  height: 255px;
+  display: flex;
+}
+.depth1-list > li > a:first-child {
+  font-weight: bold;
+  color: #1428a0;
+  display: block;
+  font-size: 15px;
+}
+.depth1-list > li:nth-of-type(2),
+.depth1-list > li:nth-of-type(3),
+.depth1-list > li:nth-of-type(4) {
+  padding-left: 48px;
+  margin-left: 48px;
+  position: relative;
+}
+.depth1-list > li:nth-of-type(2)::before,
+.depth1-list > li:nth-of-type(3)::before,
+.depth1-list > li:nth-of-type(4)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+}
+.depth2-list > li > a {
+  display: block;
+  margin-top: 22px;
+  font-size: 14px;
+}
+.depth-inner {
+  display: flex;
+}
+.depth-inner > .depth2-list:first-child {
+  margin-right: 58px;
+}
+
+.util-area {
+  display: flex;
+}
+.util-menu {
+  display: flex;
+  width: 184px;
+}
+.util-menu i,
+.util-menu span {
+  display: block;
+  width: 60px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.util-menu i {
+  font-size: 20px;
+  position: relative;
+}
+.util-menu > i::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #ddd;
+  right: 0;
+  top: 33px;
+}
+.util-menu span:nth-of-type(1) {
+  position: relative;
+}
+.util-menu span:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #ddd;
+  right: 0px;
+  top: 33px;
+}
+.searchBtn {
+  width: 60px;
+  height: 70px;
+  background-color: #043285;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  border: none;
+}
+.company > a {
+  display: block;
+  height: 70px;
+  font-weight: bold;
+  position: relative;
+  line-height: 70px;
+  font-size: 17.5px;
+}
+.company > a:hover::after {
+  transform: translateX(-50%);
+  width: 100%;
+  transition: width 0.4s ease-in-out;
+}
+.company > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  width: 0;
+  background-color: #1428a0;
+}
+.depth1 > a {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 17px 20px;
+  width: 880px;
+  margin-top: 30px;
+  position: relative;
+}
+.depth1 > a::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 28.5px;
+  width: 10px;
+  height: 17px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/btn_arrow_ico_l.png);
+}
+.depth1 > a strong {
+  color: #043285;
+  font-size: 17px;
+}
+.depth1 > a p {
+  font-size: 13.5px;
+  margin-top: 9px;
+}
+.gnb-list .company:nth-child(2) .depth1-list {
+  padding-left: 130px;
+  height: 175px;
+}
+.gnb-list .company:nth-child(3) .depth1-list {
+  height: 103px;
+  padding-left: 30px;
+}
+.gnb-list .company:nth-child(4) .depth1-list {
+  padding-left: 120px;
+}
+.gnb-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  box-sizing: border-box;
+}
+.gnb-btn a {
+  display: block;
+  width: 340px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 17px 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  margin-top: 30px;
+  position: relative;
+}
+.gnb-btn a::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 28.5px;
+  width: 10px;
+  height: 17px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/btn_arrow_ico_l.png);
+}
+.gnb-btn a strong {
+  font-size: 17.5px;
+}
+.gnb-btn a p {
+  font-size: 13px;
+  margin-top: 8px;
+}
+.gnb-list .company:nth-child(4) .depth1-list {
+  height: 200px;
+}
