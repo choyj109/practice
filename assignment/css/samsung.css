@@ -37,7 +37,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 .depth1-list {
   height: 255px;
@@ -262,26 +261,28 @@
 }
 .company:first-child:hover > .depth1 {
   display: block;
-  padding-left: 300px;
+  display: flex;
+  justify-content: center;
 }
 .company:nth-child(2):hover > .depth1 {
   display: block;
-  padding-left: 390px;
+  display: flex;
+  justify-content: center;
 }
 .company:nth-child(3):hover > .depth1 {
   display: block;
-  padding-left: 640px;
+  display: flex;
+  justify-content: center;
 }
 .company:nth-child(4):hover > .depth1 {
   display: block;
-  padding-left: 270px;
-}
-.company:nth-child(4):hover > .depth1 > .gnb-btn {
-  margin-left: 170px;
+  display: flex;
+  justify-content: center;
 }
 .company:nth-child(5):hover > .depth1 {
   display: block;
-  padding-left: 320px;
+  display: flex;
+  justify-content: center;
 }
 .util-sns {
   display: flex;
