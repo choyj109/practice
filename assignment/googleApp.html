@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>googleApp</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/googleApp.css" />
+    <script
+      src="https://kit.fontawesome.com/40b06726eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="content-box">
+          <span>Gmail</span>
+          <span>이미지</span>
+          <div class="menu">
+            <i class="fa-solid fa-list-ul" id="menubtn"></i>
+            <div class="menubox hidden">
+              <ul>
+                <li class="menu-list-owner">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>Google 계정</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>검색</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>지도</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>Youtube</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>Play</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>뉴스</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>Gmail</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>Meet</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>채팅</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>주소록</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>드라이브</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>캘린더</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>번역</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>사진</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>Duo</span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#">
+                    <div class="bgImg"></div>
+                    <span>쇼핑</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </header>
+    <script>
+      const menubtn = document.querySelector("#menubtn");
+      const menubox = document.querySelector(".menubox");
+      menubtn.addEventListener("click", () => {
+        menubox.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
