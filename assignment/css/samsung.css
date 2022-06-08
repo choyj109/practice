@@ -143,8 +143,8 @@
 .searchArea {
   display: none;
 }
-.searchBtn:active .searchArea,
-.searchBtn:active .search-wrap {
+.searchBtn:hover .searchArea,
+.searchBtn:hover .search-wrap {
   display: block;
 }
 .searchArea {
