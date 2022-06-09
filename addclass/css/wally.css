@@ -1,0 +1,79 @@
+body {
+  background: url(../img/wally/bg.png);
+}
+#logo {
+  width: 180px;
+  height: 190px;
+  margin: 40px;
+  background: url(../img/wally/logo.png) no-repeat;
+  text-indent: -9999px;
+  font-size: 0;
+}
+#control {
+  width: 180px;
+  height: 180px;
+  margin: 40px;
+  border-radius: 50%;
+  background: #d6423e;
+  position: relative;
+  overflow: auto; /* 부모와 자식 간의 */
+}
+#control a {
+  display: block;
+  width: 180px;
+  height: 25px;
+  margin: 20px 0;
+  text-indent: -9999px;
+  font-size: 0;
+  background: url(../img/wally/arrow.png) no-repeat center top;
+  opacity: 0.75;
+}
+#control a:hover {
+  opacity: 1;
+}
+#control a#arrBottom {
+  background-position: bottom center;
+  position: absolute;
+  bottom: 0;
+}
+#control #heightBox {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  color: #d4433b;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #fff;
+}
+
+#wally {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 280px;
+  transform: translateX(-50%);
+  border: 1px solid green;
+}
+#face {
+  background: url(../img/wally/face.png) no-repeat;
+  width: 100px;
+  height: 130px;
+  position: relative;
+  left: 130px;
+  top: 80px;
+  z-index: -1;
+}
+#body {
+  background: url(../img/wally/body.png) no-repeat;
+  width: 280px;
+  height: 320px;
+  position: relative;
+}
+#leg {
+  background: url(../img/wally/leg.png) no-repeat bottom;
+  width: 280px;
+  height: 180px;
+  position: relative;
+}
