@@ -30,7 +30,9 @@
         margin: 0;
         padding: 0;
       }
-
+      a {
+        outline: none;
+      }
       .swiper {
         width: 100%;
         height: 100%;
@@ -175,16 +177,10 @@
         left: 3.7%;
         bottom: 1%;
       }
-      .swiper-slide:nth-child(2) .right > img {
-        width: 138.1%;
-        position: absolute;
-        left: -35.5%;
-        bottom: -9%;
-      }
       .swiper-slide:nth-child(3) .right > img {
         width: 138.1%;
         position: absolute;
-        left: -26.8%;
+        left: -35.5%;
         bottom: -9%;
       }
       .swiper-slide:nth-child(4) .right > img {
@@ -196,10 +192,16 @@
       .swiper-slide:nth-child(5) .right > img {
         width: 138.1%;
         position: absolute;
+        left: -26.8%;
+        bottom: -9%;
+      }
+      .swiper-slide:nth-child(6) .right > img {
+        width: 138.1%;
+        position: absolute;
         left: -34.6%;
         bottom: 19.9%;
       }
-      .swiper-slide:nth-child(6) .right > img {
+      .swiper-slide:nth-child(7) .right > img {
         width: 138.1%;
         position: absolute;
         left: -26.8%;
@@ -218,12 +220,12 @@
         left: -8px;
         top: 0;
       }
-      .swiper-slide.first-screen {
+      .swiper-slide.first-slide {
         background: url(https://www.baemin.com/_next/static/images/main_01@2x.jpg)
           no-repeat center center;
         background-size: cover;
       }
-      .swiper-slide.first-screen > img {
+      .swiper-slide.first-slide > img {
         position: absolute;
         right: 0;
         top: 0;
@@ -233,12 +235,12 @@
       .mobile-store {
         display: flex;
       }
-      .swiper-slide.first-screen p {
+      .swiper-slide.first-slide p {
         font-weight: bold;
         margin: 25px 0 12px;
         font-size: 16.3px;
       }
-      .swiper-slide.first-screen .left a {
+      .swiper-slide.first-slide .left a {
         display: block;
         background-color: #fff;
         border-radius: 50px;
@@ -247,7 +249,7 @@
         position: relative;
         margin-right: 12px;
       }
-      .swiper-slide.first-screen .left a img {
+      .swiper-slide.first-slide .left a img {
         position: absolute;
         width: 140px;
         height: auto;
@@ -255,25 +257,43 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      .swiper-slide.first-screen .right img {
+      .swiper-slide.first-slide .right img {
         width: 143px;
         height: auto;
         position: absolute;
         left: 69.5%;
         bottom: -7.5%;
       }
-      .swiper-slide.first-screen .right span {
+      .swiper-slide.first-slide .right span {
         font-weight: bold;
         font-size: 15.7px;
         position: absolute;
         left: 70%;
         bottom: 24%;
       }
+      .swiper-slide.last-slide {
+        background-color: #fff;
+        color: #000;
+      }
+      .topUl {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .bottomUl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .desc-box p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
     </style>
   </head>
 
   <body>
-    <!-- Swiper -->
+    <!-- swiper -->
     <div class="swiper mySwiper">
       <div class="header-bar">
         <img
@@ -321,7 +341,7 @@
         </div>
       </div>
       <div class="swiper-wrapper">
-        <div class="swiper-slide first-screen">
+        <div class="swiper-slide first-slide">
           <img
             src="https://www.baemin.com/_next/static/images/rider-button-pc@2x.png"
             alt="라이더 모집"
@@ -479,6 +499,88 @@
             </div>
           </div>
         </div>
+        <div class="swiper-slide last-slide">
+          <div class="leftRight">
+            <div class="left">
+              <div class="list-box">
+                <ul class="topUl">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/link_woowahan@2x.png"
+                        alt="우아한 형제들"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/link_woowahan@2x.png"
+                        alt="배민사장님광장"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/link-store@2x.png"
+                        alt="배민문방구"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/link-store@2x.png"
+                        alt="배민커넥트"
+                    /></a>
+                  </li>
+                </ul>
+                <ul class="bottomUl">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/icon-facebook@2x.png"
+                        alt="페이스북"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/icon-instagram@2x.png"
+                        alt="인스타"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/icon-blog@2x.png"
+                        alt="블로그"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://www.baemin.com/_next/static/images/icon-youtube@2x.png"
+                        alt="유튜브"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="desc-box">
+                <p>(주)우아한 형제들</p>
+                <p>서울시 송파구 위례성대로 2 장은빌딩 2층</p>
+              </div>
+              <div class="desc-box">
+                <p>사업자번호 : 120-87-65763 <a href="#">사업자정보확인</a></p>
+                <p>통신판매업 : 서울 송파-0515</p>
+              </div>
+              <div class="desc-box">
+                <p>전자금융분쟁처리</p>
+                <p>TEL : 1600-0987 FAX : 050-6050-0400</p>
+                <p>MAIL : <a href="#">help@woowahan.com</a></p>
+              </div>
+            </div>
+            <div class="right"></div>
+          </div>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
       <img
@@ -493,7 +595,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".swiper", {
         direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 0,
