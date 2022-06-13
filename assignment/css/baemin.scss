@@ -1,0 +1,353 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-v {
+  background: #eee;
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  background: url(https://www.baemin.com/_next/static/images/dotScroll02@2x.png)
+    no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 10px) 0;
+}
+.swiper-pagination-bullet-active {
+  background: url(https://www.baemin.com/_next/static/images/dotSelect@2x.png)
+    no-repeat;
+  background-size: contain;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  right: 11%;
+  top: 60%;
+}
+
+.swiper-slide {
+  background-color: #2ac1bc;
+  color: rgb(255, 255, 255);
+  position: relative;
+  .contents {
+    width: 1024px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 165px 50px 0px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & > img {
+      width: 462px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+    p,
+    span {
+      line-height: 1.38;
+    }
+    p {
+      font-size: 16px;
+      &:nth-child(3) {
+        margin-bottom: 10px;
+      }
+    }
+    span {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+    .img-slide {
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      width: 62%;
+      height: 80%;
+      img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+.first-slide {
+  background: url(https://www.baemin.com/_next/static/images/main_01@2x.jpg)
+    no-repeat center center / cover;
+  .contents {
+    span,
+    p {
+      font-size: 15.9px;
+      font-weight: 800;
+      opacity: 1;
+    }
+    p {
+      margin-bottom: 13px;
+      margin-top: 25px;
+    }
+    .mobile-store {
+      display: flex;
+      a {
+        width: 200px;
+        height: 70px;
+        margin-right: 12px;
+        padding: 15px 30px;
+        border-radius: 100px;
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .qrcode {
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    right: 50px;
+    bottom: 7.4%;
+    img {
+      margin-top: 15px;
+    }
+  }
+}
+.last-slide {
+  background: #ffffff;
+  color: rgb(51, 51, 51);
+  a {
+    display: inline-block;
+  }
+  .contents {
+    padding: 104px 0 0 30px;
+    .img-slide {
+      height: 306px;
+      width: 193px;
+      top: 13.5%;
+      right: 27.5%;
+      img {
+        width: 100%;
+        height: auto;
+        &:first-child {
+          top: 0;
+        }
+        &:last-child {
+          width: 75%;
+          bottom: 0;
+          left: 73px;
+        }
+      }
+    }
+  }
+  .topUl {
+    display: grid;
+    grid-gap: 13px 28px;
+    grid-template-columns: auto auto;
+    justify-items: start;
+    margin-bottom: 61px;
+    img {
+      height: 24px;
+      width: auto;
+    }
+  }
+  .bottomUl {
+    display: flex;
+    justify-content: space-between;
+    width: 266px;
+    margin-left: -12px;
+    margin-bottom: 19.5%;
+    img {
+      height: 34.4px;
+      width: auto;
+    }
+  }
+  .desc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    p,
+    a {
+      font-size: 14.3px;
+    }
+    a {
+      background: url(https://www.baemin.com/_next/static/images/link-line_01@2x.png)
+        center bottom / 100% 3px no-repeat;
+      margin-left: 5px;
+    }
+  }
+}
+
+.header-bar {
+  position: fixed;
+  opacity: 1;
+  transition: z-index 1s ease 0.1s;
+  transition: opacity 1.3s ease 0.1s;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 9.1%;
+  height: 32px;
+  width: 794px;
+  padding-right: 130px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: auto;
+    height: 100%;
+  }
+  .header-down {
+    display: flex;
+    align-items: center;
+    .downBtn {
+      background: url(https://www.baemin.com/_next/static/images/btn-download-white@3x.png)
+        no-repeat center center / cover;
+      width: 140px;
+      height: 48px;
+      margin-right: 32px;
+    }
+    .downBtn.hidden {
+      display: none;
+    }
+    .header-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 192px;
+      height: 48px;
+      a {
+        width: 34px;
+        height: 34px;
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        a {
+          text-align: center;
+        }
+        &:nth-child(1) a {
+          background: url(https://www.baemin.com/_next/static/images/iconFacebook@2x.png)
+            no-repeat center center / cover;
+        }
+        &:nth-child(2) a {
+          background: url(https://www.baemin.com/_next/static/images/iconInstagram@2x.png)
+            no-repeat center center / cover;
+        }
+        &:nth-child(3) a {
+          background: url(https://www.baemin.com/_next/static/images/iconBlog@2x.png)
+            no-repeat center center / cover;
+        }
+        &:nth-child(4) a {
+          background: url(https://www.baemin.com/_next/static/images/iconYoutube@2x.png)
+            no-repeat center center / cover;
+        }
+      }
+    }
+  }
+}
+.header-bar.hidden {
+  opacity: 0;
+  transition: all 1.8s ease 0.1s;
+  z-index: -1;
+}
+.baeminImg {
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.riderImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 173px;
+  height: auto;
+  transition: all 1s ease 0.2s;
+}
+.riderImg.hidden {
+  opacity: 0;
+  transition: all 1s ease 0.2s;
+  z-index: -1;
+}
+.sound {
+  height: 39px;
+  width: auto;
+  margin-top: 14px;
+  margin-left: -7px;
+}
+.swiper-slide {
+  &:nth-of-type(1) .img-slide img {
+    left: 79.6%;
+    bottom: 8.6%;
+    &:first-child {
+      width: 110%;
+      left: 83%;
+      bottom: 9%;
+    }
+  }
+  &:nth-of-type(3) .img-slide img {
+    left: 56.3%;
+  }
+  &:nth-of-type(4) .img-slide img {
+    left: 56.3%;
+  }
+  &:nth-of-type(5) .img-slide img {
+    bottom: 24.1%;
+    left: 50.6%;
+  }
+  &:nth-of-type(6) .img-slide img {
+    left: 56.3%;
+  }
+}
