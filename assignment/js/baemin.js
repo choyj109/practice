@@ -37,3 +37,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8815af3bcc2935c671d759b824e712667a63be49
