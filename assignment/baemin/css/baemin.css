@@ -64,7 +64,7 @@ a {
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   right: 11%;
-  top: 60%;
+  top: 60.6%;
 }
 
 .swiper-slide {
@@ -148,14 +148,41 @@ a {
   height: auto;
 }
 .first-slide .qrcode {
-  width: 145px;
-  height: 145px;
+  width: 141px;
+  height: 141px;
   position: absolute;
   right: 50px;
-  bottom: 7.4%;
+  bottom: 6%;
 }
 .first-slide .qrcode img {
   margin-top: 15px;
+}
+
+.swiper-slide:nth-of-type(2) .img-slide img {
+  left: 79.6%;
+  bottom: 8%;
+}
+.swiper-slide:nth-of-type(2) .img-slide img:first-child {
+  width: 110%;
+  left: 83.4%;
+  bottom: 9%;
+}
+.swiper-slide:nth-of-type(3) .img-slide img {
+  left: 50%;
+}
+.swiper-slide:nth-of-type(4) .img-slide img {
+  left: 56.3%;
+}
+.swiper-slide:nth-of-type(5) .img-slide img {
+  left: 56.3%;
+}
+.swiper-slide:nth-of-type(6) .img-slide img {
+  left: 50.6%;
+  bottom: 25.5%;
+}
+.swiper-slide:nth-of-type(7) .img-slide img {
+  left: 56.3%;
+  bottom: -0.2%;
 }
 
 .last-slide {
@@ -230,7 +257,7 @@ a {
   transition: opacity 1.3s ease 0.1s;
   left: 50%;
   transform: translateX(-50%);
-  top: 9.1%;
+  top: 9.6%;
   height: 32px;
   width: 794px;
   padding-right: 130px;
@@ -247,13 +274,14 @@ a {
   display: flex;
   align-items: center;
 }
-.header-bar .header-down .downBtn {
+.header-bar .header-down .downBtn.visiable {
   background: url(https://www.baemin.com/_next/static/images/btn-download-white@3x.png) no-repeat center center/cover;
   width: 140px;
   height: 48px;
   margin-right: 32px;
+  display: block;
 }
-.header-bar .header-down .downBtn.hidden {
+.header-bar .header-down .downBtn {
   display: none;
 }
 .header-bar .header-down .header-lists {
@@ -324,25 +352,27 @@ a {
   margin-left: -7px;
 }
 
-.swiper-slide:nth-of-type(1) .img-slide img {
-  left: 79.6%;
-  bottom: 8.6%;
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet:first-child,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet:first-child {
+  display: none;
 }
-.swiper-slide:nth-of-type(1) .img-slide img:first-child {
-  width: 110%;
-  left: 83%;
-  bottom: 9%;
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet:last-child,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  display: none;
 }
-.swiper-slide:nth-of-type(3) .img-slide img {
-  left: 56.3%;
+
+.swiper-pagination.visiable {
+  z-index: 10;
+  opacity: 1;
+  transition: all 0.5s;
 }
-.swiper-slide:nth-of-type(4) .img-slide img {
-  left: 56.3%;
-}
-.swiper-slide:nth-of-type(5) .img-slide img {
-  bottom: 24.1%;
-  left: 50.6%;
-}
-.swiper-slide:nth-of-type(6) .img-slide img {
-  left: 56.3%;
+
+.swiper-pagination {
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s;
+<<<<<<< HEAD
 }/*# sourceMappingURL=baemin.css.map */
+=======
+}/*# sourceMappingURL=baemin.css.map */
+>>>>>>> 8815af3bcc2935c671d759b824e712667a63be49

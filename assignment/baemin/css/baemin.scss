@@ -66,7 +66,7 @@ a {
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   right: 11%;
-  top: 60%;
+  top: 60.6%;
 }
 
 .swiper-slide {
@@ -151,14 +151,42 @@ a {
     }
   }
   .qrcode {
-    width: 145px;
-    height: 145px;
+    width: 141px;
+    height: 141px;
     position: absolute;
     right: 50px;
-    bottom: 7.4%;
+    bottom: 6%;
     img {
       margin-top: 15px;
     }
+  }
+}
+.swiper-slide {
+  &:nth-of-type(2) .img-slide img {
+    left: 79.6%;
+    bottom: 8%;
+    &:first-child {
+      width: 110%;
+      left: 83.4%;
+      bottom: 9%;
+    }
+  }
+  &:nth-of-type(3) .img-slide img {
+    left: 50%;
+  }
+  &:nth-of-type(4) .img-slide img {
+    left: 56.3%;
+  }
+  &:nth-of-type(5) .img-slide img {
+    left: 56.3%;
+  }
+  &:nth-of-type(6) .img-slide img {
+    left: 50.6%;
+    bottom: 25.5%;
+  }
+  &:nth-of-type(7) .img-slide img {
+    left: 56.3%;
+    bottom: -0.2%;
   }
 }
 .last-slide {
@@ -234,7 +262,7 @@ a {
   transition: opacity 1.3s ease 0.1s;
   left: 50%;
   transform: translateX(-50%);
-  top: 9.1%;
+  top: 9.6%;
   height: 32px;
   width: 794px;
   padding-right: 130px;
@@ -249,14 +277,15 @@ a {
   .header-down {
     display: flex;
     align-items: center;
-    .downBtn {
+    .downBtn.visiable {
       background: url(https://www.baemin.com/_next/static/images/btn-download-white@3x.png)
         no-repeat center center / cover;
       width: 140px;
       height: 48px;
       margin-right: 32px;
+      display: block;
     }
-    .downBtn.hidden {
+    .downBtn {
       display: none;
     }
     .header-lists {
@@ -327,27 +356,23 @@ a {
   margin-top: 14px;
   margin-left: -7px;
 }
-.swiper-slide {
-  &:nth-of-type(1) .img-slide img {
-    left: 79.6%;
-    bottom: 8.6%;
-    &:first-child {
-      width: 110%;
-      left: 83%;
-      bottom: 9%;
-    }
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  &:first-child {
+    display: none;
   }
-  &:nth-of-type(3) .img-slide img {
-    left: 56.3%;
+  &:last-child {
+    display: none;
   }
-  &:nth-of-type(4) .img-slide img {
-    left: 56.3%;
-  }
-  &:nth-of-type(5) .img-slide img {
-    bottom: 24.1%;
-    left: 50.6%;
-  }
-  &:nth-of-type(6) .img-slide img {
-    left: 56.3%;
-  }
+}
+.swiper-pagination.visiable {
+  z-index: 10;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.swiper-pagination {
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s;
 }
